@@ -4,6 +4,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
+## Deployment Link 
+[Cllick here to open](https://ez-simple-form-dhanu.vercel.app/)
+
 In the project directory, you can run:
 
 ### `npm start`
