@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "f01169a6-0a5a-4ada-86af-1f2a7f1b4cc2",
+		"name": "EZWorks Form Submission",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32039319"
+	},
+	"item": [
+		{
+			"name": "Valid Email Submission",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"dhanunjayaburada6@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://34.225.132.160:8002/api",
+					"protocol": "http",
+					"host": [
+						"34",
+						"225",
+						"132",
+						"160"
+					],
+					"port": "8002",
+					"path": [
+						"api"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Empty Email Submission",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://34.225.132.160:8002/api",
+					"protocol": "http",
+					"host": [
+						"34",
+						"225",
+						"132",
+						"160"
+					],
+					"port": "8002",
+					"path": [
+						"api"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Invalid Email Format",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"gmail@\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://34.225.132.160:8002/api",
+					"protocol": "http",
+					"host": [
+						"34",
+						"225",
+						"132",
+						"160"
+					],
+					"port": "8002",
+					"path": [
+						"api"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Email Ending with @ez.works",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"test@ez.works\"\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://34.225.132.160:8002/api",
+					"protocol": "http",
+					"host": [
+						"34",
+						"225",
+						"132",
+						"160"
+					],
+					"port": "8002",
+					"path": [
+						"api"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
